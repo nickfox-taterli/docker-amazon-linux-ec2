@@ -1,0 +1,4 @@
+FROM amazonlinux:2017.09
+MAINTAINER Takashi Nozawa<nozazon@gmail.com>
+
+RUN yum install -y \

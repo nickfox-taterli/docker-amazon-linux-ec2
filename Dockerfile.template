@@ -1,4 +1,6 @@
 FROM amazonlinux:2017.09
 MAINTAINER Takashi Nozawa<nozazon@gmail.com>
 
+RUN groupadd -g 500 ec2-user && useradd -u 500 -g 500 -c "EC2 Default User" ec2-user
+
 RUN yum install -y \

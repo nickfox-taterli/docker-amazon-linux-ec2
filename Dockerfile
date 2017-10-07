@@ -393,3 +393,6 @@ RUN yum install -y \
 	 zip.x86_64 \
 	 zlib.x86_64 \
 	;
+
+RUN /usr/sbin/groupadd --gid 500 ec2-user && \
+	/usr/sbin/useradd --uid 500 --gid 500 --comment "EC2 Default User" -m ec2-user
